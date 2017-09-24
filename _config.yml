@@ -249,8 +249,9 @@ defaults:
       related: true
   # _pages
   - scope:
-			path: ""
-			tyupe: pages
-		values:
-			layout: single
-			author_profile: false
+      path: ""
+      tyupe: pages
+    values:
+      layout: single
+      author_profile: false
+
