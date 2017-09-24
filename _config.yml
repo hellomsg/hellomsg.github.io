@@ -247,3 +247,10 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+			path: ""
+			tyupe: pages
+		values:
+			layout: single
+			author_profile: false
