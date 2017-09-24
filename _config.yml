@@ -8,11 +8,11 @@
 minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
 
 # Site Settings
-locale                   : "zh_CN"
-title                    : "Hellomsg's Blog"
+locale                   : "en"
+title                    : "Site Title"
 title_separator          : "-"
-name                     : "hellomsg"
-description              : "It's interesting"
+name                     : "Your Name"
+description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -79,11 +79,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "hellomsg"
-  avatar           : /assets/images/profile.png
-  bio              : "I am an engineer"
-  location         : "Beijing, China"
-  email            : hellomsg_noreply2ATlive.com
+  name             : "Your Name"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am an amazing person."
+  location         : "Somewhere"
+  email            :
   uri              :
   bitbucket        :
   codepen          :
@@ -91,7 +91,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : hellomsg
+  github           :
   gitlab           :
   google_plus      :
   keybase          :
@@ -177,7 +177,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: Asia/Shanghai
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -233,11 +233,6 @@ compress_html:
   ignore:
     envs: development
 
-# Collections
-collections:
-  research:
-    output: true
-    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -251,17 +246,4 @@ defaults:
       read_time: true
       comments: # true
       share: true
-      #related: true
-
-	# _research
-	- scope:
-			path: ""
-			type: research
-		values:
-			layout: single
-			author_profile: true
-			read_time: true
-			comments: # true
-			share: true
-			related: true
-
+      related: true
