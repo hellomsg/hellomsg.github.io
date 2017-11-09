@@ -18,7 +18,7 @@ title: 设计模式吐槽
 
 1. 装饰模式（Decorator），就是一层层包装自己。一个具体的类（ConcreteComponent）继承一个抽象的父类（Component）并实现所有抽象方法，一个装饰物（Decorator）继承上述抽象父类（Component）并包含一个对象（Component），具体的装饰物继承装饰物（Decorator）并实现所有抽象方法，实现时调用具体类（ConcreteComponent）。这种方法可以在实例化Decorator时，传入Component，多次嵌套Decorator，实现功能的不断叠加。
 	
-	应用：`FilterInputStream`, `BufferedInputStream`, `LineNumberInputStream,`, etc.
+	应用：`FilterInputStream`, `BufferedInputStream`, `LineNumberInputStream`, `SynchronizedList`应该也算装饰模式，etc.
 1. 观察者模式（Observer）
 
 	应用：`java.util.Observable`
