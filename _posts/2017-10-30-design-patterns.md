@@ -31,12 +31,13 @@ title: 设计模式吐槽
 import org.apache.commons.rng.simple.RandomSource;
 UniformRandomProvider rng = RandomSource.create(RandomSource.MT);
 	```
-1. 代理模式（Proxy）。
+1. 代理模式（Proxy）
 
 	- 远程代理：RMI
 	- 虚拟代理：控制访问创建开销大的资源
 	- 保护代理：基于权限控制的资源访问
 	
+	应用：远程代理像什么Gaea、Dubbo；[Apache Commons Configuration](http://commons.apache.org/proper/commons-configuration/)的Parameters中也使用到了代理模式。
 1. 外观模式（Facade-Pattern）
 
 	就是把一套复杂的流程包装起来。意图是提供子系统的一个简化接口。起到解耦的作用。
